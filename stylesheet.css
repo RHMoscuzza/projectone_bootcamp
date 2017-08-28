@@ -1,0 +1,997 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*Same for all pages*/
+.wrapper {
+	max-width: 1170px;
+	font-family: ‘Lato’, sans-serif;
+	font-weight: normal;
+	margin: 0 auto;
+}
+
+h1, h2, h3 {
+	font-family: ‘Adamina’, serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+.italics {
+	font-style: italic;
+}
+
+/*Home specific*/
+/*HEADER*/
+.headerWrap {
+	background-image: url(images/home_png/dmitry-mashkin-288168.png);
+	height: 200px;
+}
+
+.headerIndex {
+	height: 100%;
+	overflow: hidden;
+}
+
+.headerBox {
+	float: left;
+	width: 33.3%;
+	/*transform: translateY(50%);*/ 
+}
+
+.subscribeIndex {
+	color: #000;
+	display: block;
+	/*border: 1px solid red;*/
+	width: 100px;
+	text-align: center;
+	background: #fff;
+	border-radius: 20px;
+	padding: 2%;
+	font-family: ‘Adamina’, serif;
+	margin-top: 20%;
+}
+
+.headerIndex a:hover, .utilites a:hover {
+	color: #dad2b8;
+}
+
+.logoIndex {
+	text-align: center;
+	transform: translateY(50%);
+}
+
+.utilities {
+	text-align: right;
+	display: block;
+	margin-top: 8%;
+}
+
+.utilities a {
+	color: #fff;
+}
+
+.navBarMainWrap {
+	box-shadow: 0px 10px 24px 0px rgba(10,1,10,0.1);
+	padding-bottom: 10px;
+}
+
+.navBarMain {
+	/*position: relative;*/
+	height: 35px;
+}
+
+.navBarMain li {
+	float: left;
+	padding-left: 20px;
+}
+
+.navBarList {
+	float: left;
+}
+
+.navBarList a {
+	color: #999999;
+	font-family: ‘Adamina’, serif;
+}
+
+.navBarList a:hover {
+	color: #000;
+}
+
+.socialMediaIndex {
+	/*position: absolute;
+	right: 0;*/
+	float: right;
+}
+
+.socialMediaIndex a {
+	color: #000;
+}
+
+.socialMediaIndex a:hover {
+	color: #999999;
+}
+
+/*BLOG MAIN POST*/
+.headBlog {
+	position: relative;
+}
+
+.beforeArrow::before {
+	content: url(assets/Prev.png);
+	display: block;
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	left: -90px;
+}
+
+.beforeArrow::after {
+	content: url(assets/Next.png);
+	display: block;
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	right: -90px;
+}
+
+.blogImgMain {
+	margin-top: 60px;
+	position: relative;
+	z-index: 80;
+	width: 100%;
+}
+
+.blogInfoMainWrap {
+	bottom: 0;
+	width: 100%;
+	margin-top: -50px;
+	position: relative;
+	z-index: 90;
+}
+
+.blogInfoMain {
+	text-align: center;
+	/*position: relative;*/
+	margin: 0 auto;
+	width: 600px;
+	background: #fff;
+	/*border: 1px solid red;*/
+	padding: 40px 50px 22px;
+	box-shadow: 0px 10px 24px 0px rgba(10,1,10,0.1);
+}
+
+.blogInfoMain h3 {
+	color: #af9f66;
+	font-size: 24px;
+	width: 495px;
+	margin: 0 auto;
+}
+
+.nameCommentDate {
+	width: 380px;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.blogPara {
+	float: left;
+	text-align: center;
+	padding-left: 20px;
+	margin-bottom: 0;
+    margin-top: 30px;
+	/*position: absolute;*/
+}
+
+/*CHEF BIO*/
+.chefBioWrap, .linksPreFooter {
+	background-image: url(images/home_png/texture.jpg);
+	margin-top: 60px;
+	background-repeat: repeat;
+}
+
+.bio {
+	float: left;
+	width: calc(70% - 70px);
+	margin-right: 70px;
+	transform: translateY(50%);
+	margin-bottom: 60px;
+}
+
+.grey {
+	color: #999999;
+	font-family: ‘Adamina’, serif;
+}
+
+.getInTouch a {
+	color: #bd9a60;
+	font-family: ‘Adamina’, serif;
+}
+
+.bio a:hover {
+	color: #eeeeee;
+}
+
+.color1 {
+	background: #365493;
+	color: #fff;
+	padding: 15px 19px;
+	border-radius: 50%;
+}
+
+.color2 {
+	background: #33ccff;
+	color: #fff;
+	padding: 15px;
+	border-radius: 50%;
+}
+
+.color3 {
+	background: #d44132;
+	color: #fff;
+	padding: 15px 13px;
+	border-radius: 50%;
+}
+
+.color4 {
+	background: #cb2027;
+	color: #fff;
+	padding: 15px 17px;
+	border-radius: 50%;
+}
+
+.chefPic {
+	float: left;
+	width: 30%;
+	margin-bottom: 65px;
+	margin-top: 65px;
+	transform: translateY(10%);
+}
+
+.chefSignature {
+	position: relative;
+}
+
+.chefPic img {
+	width: 100%;
+	border-style: none;
+}
+
+.signature {
+	position: absolute;
+    right: -150px;
+    top: 50%;
+}
+
+/*LOWER BLOG ENTRIES*/
+.blog {
+	text-align: center;
+	margin: 0 auto;
+	padding: 40px 50px 22px;
+}
+
+.blog h3 {
+	color: #af9f66;
+	font-size: 24px;
+	width: 495px;
+	margin: 0 auto;
+}
+
+.underline {
+	border-bottom: 2px solid #eee8d1;
+	width: 100%;
+	padding-bottom: 30px;
+}
+
+.nameCommentDate {
+	width: 380px;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.blogPara {
+	float: left;
+	text-align: center;
+	padding-left: 20px;
+	margin-bottom: 0;
+    margin-top: 30px;
+	/*position: absolute;*/
+}
+
+.blogPara2 {
+	width: 50%;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.blogPara2 a {
+	color: #af9f66;
+	/*padding: 30px;*/
+}
+
+.blogPara2 a:hover {
+	color: #dad2b8;
+}
+
+.bottomMainNav a {
+	color: #dad2b8;
+	font-size: 12px;
+	margin-top: 35px;
+	position: relative;
+}
+
+.bottomMainNav a:hover {
+	color: #eeeeee;
+}
+
+.new {
+	float: left;
+	/*position: relative;*/
+}
+
+.new::after {
+	content: "";
+	width: 35px;
+	background-color: #dad2b8;
+	height: 1px;
+	position: absolute;
+	left: 115%;
+    top: 50%;
+}
+
+.old {
+	float: right;
+}
+
+.old::before {
+	content: "";
+	position: absolute;
+	width: 35px;
+	background-color: #dad2b8;
+	height: 1px;
+	right: 115%;
+	top: 50%; 
+}
+
+/*FOOTER LINKS*/
+.linksWrap {
+	padding-top: 65px;
+	padding-bottom: 65px;
+}
+
+.linksWrap a {
+	color: #000;
+}
+
+.linksWrap a:hover {
+	color: #dad2b8;
+}
+
+.linksWrap li {
+	margin-bottom: 10px;
+}
+
+.smallFloat {
+	float: left;
+	width: 180px;
+	margin-top: 5px;
+	/*margin-right: 10px;*/
+	font-size: 14px;
+}
+
+.tweetsLinks {
+	float: left;
+	width: 330px;
+	/*margin-top: 5px;*/
+	font-size: 14px;
+}
+
+.tweetsDiv i, .tweetsDiv a {
+	color: #af9f66;
+}
+
+.tweetIcon {
+	float: left;
+	width: 10px;
+	margin-top: 5px;
+}
+
+.tweetContent {
+	float: left;
+	width: calc(100% - 10px);
+	padding-left: 10px;
+}
+
+.tweetContent p {
+	margin: 0;
+	padding: 0;
+	line-height: 2;
+}
+
+.instagramImgs {
+	width: 280px;
+	float: left;
+}
+
+.instagramImgs img {
+	width: calc(33% - 10px);
+	margin: 5px;
+	float: left;
+}
+
+/*FOOTER*/
+.footerWrapper {
+	background: #000;
+	height: 80px;
+}
+
+footer, footer a {
+	color: #fff;
+}
+
+footer span {
+	color: #af9f66;
+}
+
+.footWrapLeft {
+	float: left;
+	transform: translateY(30%);
+}
+
+.socialIndexBottom {
+	float: right;
+	transform: translateY(150%);	
+}
+
+/*Contact and About specific*/
+.headerAboutContact {
+	height: 200px;
+}
+
+.socialAboutContact, .searchAboutContact {
+	margin-top: 100px;
+}
+
+.socialAboutContact a {
+	color: #000;
+	padding: 5px;
+}
+
+.logoAboutContact {
+	text-align: center;
+	margin-top: 50px
+}
+
+.searchAboutContact input {
+    text-align: left;
+    background-image: url(assets/search_icon.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 30px;
+    border: 1px solid #eeeeee;
+    position: absolute;
+    right: 160px;
+}
+
+.navAboutContact {
+	height: 70px;
+}
+
+.navAboutContact ul {
+	max-width: 650px;
+	margin: 0 auto;
+}
+
+.navAboutContact a {
+	float: left;
+	font-family: ‘Adamina’, serif;
+	color: #999999;
+	width: 15%;
+	margin-top: 25px;
+}
+
+.navAboutContact a:hover {
+	color: #000;
+}
+
+.navAboutContactWrap {
+	border-bottom: 1px solid #af9f66;
+	border-top: 1px solid #af9f66;
+}
+
+
+/*MAIN BODY AND ASIDE*/
+.contactMain {
+	width: calc(70% - 60px);
+	float: left;
+	margin-right: 60px;
+	margin-top: 60px;
+}
+
+.contactMain h1 {
+	margin: 0;
+}
+
+.contactMain h2 {
+	font-size: 16px;
+}
+
+.inputSmall {
+	float: left;
+	width: 360.5px;
+}
+
+.inputSmall:first-child {
+	margin-right: 38px;
+}
+
+.inputFull {
+	width: 100%;
+}
+
+.contactForm input, .contactForm textarea {
+	margin-bottom: 30px;
+	color: #999999;
+	border: 1px solid #eeeeee;
+	padding: 20px 25px;
+	font-size: 14px;
+}
+
+textarea {
+	height: 200px;
+}
+
+.contactForm input[type="button"] {
+	background: #af9f66;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+.contactMain p, .contactMain a {
+	font-size: 14px;
+	color: #b4b4b4;
+}
+
+.contactMain i, .nameCommentDate i {
+	color: #af9f66;
+}
+
+.contactDetails {
+	margin-bottom: 85px;
+}
+
+.contactOptionsWidth {
+	float: left;
+    width: calc(33% - 2.5px);
+    margin-right: 5px;
+}
+
+.contactOptionsWidth:last-child {
+	margin-right: 0;
+}
+
+.email {
+	color: #af9f66;
+}
+
+.contactOptions {
+	margin-top: 60px;
+}
+
+.contactMap img {
+	width: 100%;
+	margin-bottom: 60px;
+}
+
+/*ASIDE*/
+.aside {
+	width: 30%;
+	float: left;
+	margin-top: 60px;
+}
+
+.subscribeAboutContact {
+	position: relative;
+	border: 1px solid #eeeeee;		
+}
+
+.subscribeAboutContact h2 {
+	text-align: center;
+	position: relative;
+}
+
+.subscribeAboutContact h2::before {
+    content: "";
+    width: 25px;
+    background-color: #af9f66;
+    height: 2px;
+    position: absolute;
+    top: 12px;
+    left: 80px;
+}
+
+.subscribeAboutContact h2::after {
+	content: "";
+	width: 25px;
+	background: #af9f66;
+	height: 2px;
+	position: absolute;
+	top: 12px;
+	right: 80px;
+}
+
+.subscribeEmailWrap {
+	width: 100%;
+	border-top: 1px solid #eeeeee;
+	padding: 20px;
+}
+
+.subscribeInput {
+	border: 1px solid #eeeeee;
+	padding: 20px;
+	font-size: 12px;
+	background-image: url(assets/mail_icon.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	width: 300px;
+}
+
+.subscribeEmailWrap, .subscribeInput {
+	position: relative;
+}
+
+.subscribeEmailWrap img {
+	position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.mostPopImg {
+	float: left;
+	width: 30%;
+}
+
+.mostPop {
+	position: relative;
+}
+
+.mostPop h2 {
+	padding-bottom: 20px;
+}
+
+.mostPopDash::before {
+    content: "";
+    width: 50px;
+    background-color: #af9f66;
+    height: 6px;
+    position: absolute;
+    top: 35px;
+    left: 0px;
+}
+
+.mostPopText{
+	float: left;
+	margin-left: 5px;
+	width: calc(70% - 5px);
+	font-size: 14px;
+}
+
+.mostPopText h3 {
+	margin: 0
+}
+
+.categories {
+	position: relative;
+	margin: 20px;
+}
+
+.categories h3 {
+	background: #fff;
+	color: #000;
+	width: 100px;
+	position: absolute;
+	text-align: center;
+	z-index: 90;
+	bottom: 8px;
+	left: 30px;
+	margin: 0;
+	font-size: 12px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.categories img {
+	display: block;
+	margin: 0 auto;
+}
+
+.categoriesBorder h2 {
+	border-bottom: 1px solid #eeeeee;
+	padding-bottom: 20px;
+}
+
+/*About Us specific*/
+.aboutMeBio {
+	margin-top: 70px;
+    width: 100%;
+    padding-right: 60px;
+}
+
+.aboutMeBio h1 {
+	margin-bottom: 25px;
+}
+
+blockquote {
+	background: #f6f6f6;
+}
+
+blockquote div {
+	float: left;
+	width: calc(10% - 25px);
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+blockquote p {
+	float: left;
+    width: calc(90% - 80px);
+}
+
+.colorIconAbout i {
+	color: #fff;
+}
+
+.recipes {
+	position: relative;
+	width: 100%;
+}
+
+.mainAndRecipeWrap {
+   float: left;
+   width: 70%;
+}
+
+.recipesDash::before {
+	content: "";
+    width: 50px;
+    background-color: #af9f66;
+    height: 6px;
+    position: absolute;
+    top: 50px;
+    left: 0px; 
+}
+
+.recipesImg {
+	margin-top: 50px; 
+}
+
+.latestRecipes {
+	width: 100%;
+}
+
+.latestRecipesWrap {
+	float: left;
+}
+
+.latestRecipesWrap2 {
+	width: 50%;
+	float: left;
+}
+
+.recipesDateName {
+	float: left;
+	width: 100%;
+}
+
+.recipesDateName p {
+ 	display: inline-block;
+}
+
+.recipes a {
+	color: #af9f66;
+}
+
+.recipes a:hover {
+	color: #eeeeee;
+}
+
+.aboutInstagram {
+	position: relative;
+}
+
+.aboutInstagramDash {
+	content: "";
+    width: 50px;
+    background-color: #af9f66;
+    height: 6px;
+    position: absolute;
+    top: 110%;
+    left: 0px;
+}
+
+.instagramImgs img:nth-child(8) {
+	width: 80px;
+	height: 80px;
+}
+
+.popTags {
+	position: relative;
+	margin-bottom: 100px;
+}
+
+.popTagsDash::before {
+	content: "";
+    width: 50px;
+    background-color: #af9f66;
+    height: 6px;
+    position: absolute;
+    top: 73%;
+    left: 0px;
+}
+
+.popTagsLinks {
+	color: #000;
+    float: left;
+    text-align: center;
+    background: #f6f6f6;
+    border-radius: 20px;
+    padding: 2%;
+    margin: 10px;
+}
+
+/*GALLERY*/
+.footerGallery {
+	position: relative;
+}
+
+.footerGallery img {
+    width: 16.66%;
+    float: left;
+}
+
+.instagramBlock {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%);
+    background: #fff;
+    color: #af9f66;
+    width: 260px;
+    font-size: 14px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.instagramBlock::before {
+	content: "";
+    width: 20px;
+    background-color: #af9f66;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    z-index: 90;
+}
+
+.instagramBlock::after {
+	content: "";
+    width: 20px;
+    background-color: #af9f66;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    z-index: 90;
+}
+
+/*FOOTER*/
+.footerFollow {
+	height: 80px;
+	font-family: ‘Adamina’, serif;
+}
+
+.followMe {
+	position: relative;
+	height: 80px;
+}
+
+.followMe p, .followMe i {
+	float: left;
+}
+
+.followMeChild {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.followMeChildLeft {
+	left: 0;
+}
+
+.followMeChildRight {
+	right: 200px;
+}
+
+.followMe, .footerSubscribe {
+	width: 50%;
+	float: left;
+}
+
+.followMe i {
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.followMe a {
+	color: #000;
+}
+
+.followMe a:hover {
+	color: #eeeeee;
+}
+
+.footerSubscribe {
+	position: relative;
+	height: 80px;
+}
+
+.footerSubscribe p, .footerFollowEmail {
+	float: right;
+}
+
+.footerFollowEmail {
+	border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    right: -200px;
+    transform: translateY(-50%);
+    border: 1px solid #eeeeee;
+    font-size: 12px;
+    background-image: url(assets/mail_icon.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.footerSubscribe p {
+	margin: 0;
+}
+
+/*FOOTER FOR ABOUT AND CONTACT*/
+.footerAboutContactWrap {
+	background: #af9f66;
+	padding: 1px;
+	margin: 0;
+}
+
+.footerAboutContact {
+	margin-top: 50px;
+}
+
+.footerAboutContact img {
+	float: left;
+}
+
+.footerAboutContact p {
+	float: right;
+	margin-top: 0;
+	margin-bottom: 50px
+}
